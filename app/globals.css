@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* 米修 B&B Brand Colors */
+  --background: #FBFBFA; /* 呼吸暖白 */
+  --foreground: #3D3D3D; /* 深灰文字 */
+  --card: #FFFFFF;
+  --card-foreground: #3D3D3D;
+  --popover: #FFFFFF;
+  --popover-foreground: #3D3D3D;
+  --primary: #8FC9C2; /* 霧感 Tiffany 綠 */
+  --primary-foreground: #FFFFFF;
+  --secondary: #E6D7C3; /* 暖大地亞麻色 */
+  --secondary-foreground: #3D3D3D;
+  --muted: #F5F0EB;
+  --muted-foreground: #6B6B6B;
+  --accent: #F3E19E; /* 低彩童趣鵝黃 */
+  --accent-foreground: #3D3D3D;
+  --accent-orange: #F0A886; /* 淡橘 */
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
+  --border: #E6D7C3;
+  --input: #E6D7C3;
+  --ring: #8FC9C2;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #2A2A2A;
+  --foreground: #FBFBFA;
+  --card: #3D3D3D;
+  --card-foreground: #FBFBFA;
+  --popover: #3D3D3D;
+  --popover-foreground: #FBFBFA;
+  --primary: #8FC9C2;
+  --primary-foreground: #2A2A2A;
+  --secondary: #4A4A4A;
+  --secondary-foreground: #FBFBFA;
+  --muted: #3D3D3D;
+  --muted-foreground: #A0A0A0;
+  --accent: #F3E19E;
+  --accent-foreground: #2A2A2A;
+  --accent-orange: #F0A886;
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
+  --border: #4A4A4A;
+  --input: #4A4A4A;
+  --ring: #8FC9C2;
+}
+
+@theme inline {
+  --font-sans: 'Quicksand', 'Noto Sans TC', sans-serif;
+  --font-serif: 'Nunito', 'Noto Sans TC', serif;
+  --font-mono: 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7AB8B0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary);
+  color: white;
+}
