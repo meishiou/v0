@@ -61,11 +61,12 @@ export default function Footer() {
                   />
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="text-3xl font-semibold text-primary">米修</span>
-                  <span className="text-lg text-muted-foreground pt-1">B&B</span>
+                  <span className="text-base font-semibold text-primary">米修</span>
+                  <span className="text-xs text-muted-foreground pt-1">B&B</span>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
+                合法民宿 No.698 / 好客民宿 No.805<br />
                 一本有陽光與風的旅行繪本。<br />
                 在宜蘭，等你翻開下一頁。
               </p>
@@ -162,10 +163,14 @@ export default function Footer() {
               {/* 1. 電話 */}
               <a 
                 href="tel:+886939741583" 
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors py-0.5"
+                className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors py-0.5"
               >
-                <Phone size={16} className="shrink-0" />
-                <span>0939-741-583 阿鐵</span>
+                <Phone size={16} className="shrink-0 mt-1" />
+                <span className="block text-left">
+                  0939-741-583 阿鐵
+                  <br />
+                  <span className="text-xs opacity-80">(阿鐵LINE:0939741583)</span>
+                </span>
               </a>
 
               {/* 2. LINE */}
@@ -178,7 +183,7 @@ export default function Footer() {
                 <svg viewBox="0 0 24 24" className="w-4 h-4 shrink-0 fill-current">
                   <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.052.308-.252 1.206 1.089.658 1.341-.548 7.234-4.261 9.871-7.298 2.051-2.307 2.078-4.793 2.078-5.672zm-14.912 2.115c0 .242-.196.438-.438.438H6.533a.438.438 0 0 1-.438-.438v-3.836c0-.242.196-.438.438-.438h.547c.242 0 .438.196.438.438v2.851h1.117c.242 0 .438.196.438.438v.547zm2.461-.438a.438.438 0 0 1-.438.438h-.546a.438.438 0 0 1-.438-.438v-3.836c0-.242.196-.438.438-.438h.546c.242 0 .438.196.438.438v3.836zm4.43 0a.438.438 0 0 1-.439.438h-.551a.434.434 0 0 1-.365-.198l-1.427-2.008v1.768c0 .242-.196.438-.438.438h-.547a.438.438 0 0 1-.438-.438v-3.836c0-.242.196-.438.438-.438h.541c.21 0 .393.149.44.354l1.373 1.93v-1.846c0-.242.196-.438.438-.438h.547c.242 0 .438.196.438.438v3.836zm3.623-.629a.438.438 0 0 1-.438.438h-1.654a.438.438 0 0 1-.438-.438v-3.836c0-.242.196-.438.438-.438h1.654c.242 0 .438.196.438.438v.547a.438.438 0 0 1-.438.438h-1.108v.537h1.108c.242 0 .438.196.438.438v.547a.438.438 0 0 1-.438.438h-1.108v.561h1.108c.242 0 .438.196.438.438v.547z"/>
                 </svg>
-                <span>LINE: @766nnznw</span>
+                <span>官方LINE: @766nnznw</span>
               </a>
 
               {/* 3. Facebook */}
@@ -224,7 +229,7 @@ export default function Footer() {
 
         {/* 版權宣告 */}
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.本公司保留隨時修訂本服務條款之權利。</p>
         </div>
       </div>
 

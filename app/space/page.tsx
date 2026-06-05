@@ -184,7 +184,7 @@ export default function SpacePage() {
               宿 . 木工 . 玩生活
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              人生不是打卡清單，而是慢慢收藏生活微光的旅程<br className="hidden md:block" />
+              人生不是打卡清單，而是慢慢收藏生活微光的旅程，<br className="hidden md:block" />
               在安農溪畔的綠與手作課程中體驗心流
             </p>
           </div>

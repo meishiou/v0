@@ -81,10 +81,10 @@ const rooms = [
     description: "仿彿進到不同天地，閣樓下是爸爸媽媽休息處，上方是孩子的祕密基地, 連接上下的是米修親手作的溜滑梯及遊戲空間小賣所，有事叫喚一聲即可，小幫手會立即從天而降",
     story: "一間有溜滑梯、攀爬架的房間是孩子的夢想，因此米修親手設計製作，略微加高了米斯洛克的挑戰難度，而爸媽也別太擔心，孩子的敏捷度是在空間裡玩出來的，而相信是給孩子最大的支持力量",
     images: [
-      "/images/Mix-01.webp",
-      "/images/Mix-04.webp",
-      "/images/Mix-03.webp",
-      "/images/Mix-02.webp",
+      "/images/mix-01.webp",
+      "/images/mix-04.webp",
+      "/images/mix-03.webp",
+      "/images/mix-02.webp",
     ],
     specs: {
       size: "11.6坪",
@@ -239,7 +239,7 @@ export default function RoomsPage() {
                   </div>
 
                   <a
-                    href="https://www.airbnb.com"
+                    href="https://www.booking-owlnest.com/meishioubnb?lang=zh_TW&adult=1&child=0&infant=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"

@@ -47,8 +47,8 @@ export function Navigation() {
               />
             </div>
             <div className="flex items-center gap-1">
-              <span className="text-2xl font-semibold tracking-wide text-primary transition-colors">米修</span>
-              <span className="text-lg text-muted-foreground pt-0.5">B&B</span>
+              <span className="text-base font-semibold tracking-wide text-primary transition-colors">米修</span>
+              <span className="text-xs text-muted-foreground pt-0.5">B&B</span>
             </div>
           </Link>
 
@@ -73,7 +73,7 @@ export function Navigation() {
           </div>
 
           {/* 右側圖標按鈕區塊 (LINE、預訂、手機版漢堡選單) */}
-          <div className="flex items-center gap-3 pl-4 md:pl-8">
+          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 pl-2 md:pl-8">
             {/* LINE 圖標 */}
             <a
               href="https://line.me/R/ti/p/@766nnznw"
@@ -84,7 +84,7 @@ export function Navigation() {
               title="LINE聯絡我們"
             >
               <img 
-                src="/LINE.png" 
+                src="/Line.png" 
                 alt="LINE" 
                 className="w-11 h-11 object-contain mix-blend-multiply"
               />
@@ -116,13 +116,13 @@ export function Navigation() {
         {/* 手機版展開後的彈出選單（已優化：水平並列，但英文同步改為全大寫＋寬字距） */}
         {isOpen && (
           <div className="md:hidden absolute top-full right-0 w-1/2 bg-background/95 backdrop-blur-sm border-l border-b border-border shadow-lg rounded-bl-2xl">
-            <div className="flex flex-col gap-5 p-5">
+            <div className="flex flex-col gap-4 p-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center text-base font-medium text-foreground/80 hover:text-primary transition-colors gap-2"
+                  className="flex items-center text-base font-medium text-foreground/80 hover:text-primary transition-colors gap-1"
                 >
                   {/* 中文 */}
                   <span>{item.zh}</span>

@@ -5,7 +5,7 @@ import { Users, Home, Coffee, ArrowRight } from "lucide-react"
 const proposals = [
   {
     icon: Users,
-    title: "全棟包棟",
+    title: "大包棟",
     subtitle: "Complete Privacy",
     description: "四間房，一個家。專屬於你們的私密時光，適合家族旅遊或好友聚會",
     highlight: "最多可住 12+2 人",
@@ -14,10 +14,10 @@ const proposals = [
   },
   {
     icon: Home,
-    title: "微型包棟",
+    title: "小包棟",
     subtitle: "Flexible Booking",
     description: "預訂部分房間，我們不接外客。享有包棟般的寧靜，更彈性的選擇",
-    highlight: "空房補貼方案",
+    highlight: "空房低消方案",
     image: "/images/proposals-2.webp", // ✨ 已精準修正為 .webp 副檔名
     color: "bg-accent/30 text-accent-foreground",
   },
