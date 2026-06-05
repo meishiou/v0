@@ -220,7 +220,9 @@ export default function Footer() {
               {/* 6. 地址 */}
               <div className="flex items-center gap-3 text-muted-foreground py-0.5">
                 <MapPin size={16} className="shrink-0" />
-                <span>宜蘭縣柯林村光華一路415號</span>
+                <span>宜蘭縣柯林村光華一路415號
+                <br />
+                (羅東夜市10分鐘車程)</span>
               </div>
 
             </div>
@@ -229,7 +231,7 @@ export default function Footer() {
 
         {/* 版權宣告 */}
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.本公司保留隨時修訂本服務條款之權利。</p>
+          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.本公司保留隨時修訂網站內容及服務之權利。</p>
         </div>
       </div>
 

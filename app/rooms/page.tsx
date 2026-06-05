@@ -117,8 +117,9 @@ export default function RoomsPage() {
           <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">
           ROOMS OF Playful
           </p>
-          <h1 className="text-4xl md:text-5xl font-light text-foreground mb-6">
-          童趣系房型攝影集
+          <h1 className="text-4xl md:text-5xl font-light text-foreground mb-6 leading-[1.3]">
+          童趣系<br />
+          房型攝影集
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
             瑞德溫的暖、格林森的綠、布魯水瀾的靜、米斯洛克的自由<br className="hidden md:block" />
