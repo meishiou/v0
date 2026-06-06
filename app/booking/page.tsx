@@ -88,10 +88,12 @@ const houseRules = [
 ]
 
 const cancellationPolicy = [
-  { days: "14 天前", refund: "全額退款" },
-  { days: "7-13 天", refund: "退款 70%" },
-  { days: "3-6 天", refund: "退款 50%" },
-  { days: "2 天內", refund: "恕不退款" },
+  { days: "14 天前", refund: "退款 100%訂金" },
+  { days: "10-13 日前", refund: "退款 70%訂金" },
+  { days: "7-9 日前", refund: "退款 50%訂金" },
+  { days: "4-6 日前", refund: "退款 40%訂金" },
+  { days: "2-3 日前", refund: "退款 30%訂金" },
+  { days: "1 日前", refund: "退款20%訂金" },
 ]
 
 export default function BookingPage() {
@@ -215,7 +217,7 @@ export default function BookingPage() {
           <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="flex items-center gap-3 mb-6">
               <CreditCard size={20} className="text-primary" />
-              <h3 className="font-semibold text-foreground">退訂政策</h3>
+              <h3 className="font-semibold text-foreground">退訂政策(依旅宿業法定政策辦理)</h3>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

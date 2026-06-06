@@ -15,8 +15,8 @@ const EXPLORE_LINKS = [
 
 // 📷 包棟說明的多張圖片路徑陣列 (順序固定：上集、下集)
 const BAODONG_IMAGES = [
-  "/images/illustrate-03.webp",   // 第一張圖 (原包棟說明)
-  "/images/illustrate-04.webp"  // 第二張圖 (新增的包棟說明下集)
+  "/images/illustrate-03.jpg",   // 第一張圖 (原包棟說明)
+  "/images/illustrate-04.jpg"  // 第二張圖 (新增的包棟說明下集)
 ]
 
 /* === 2026修改開始：修正導出語法並完整保留雙欄選單與住宿說明按鈕 === */
@@ -119,7 +119,7 @@ export default function Footer() {
               <h3 className="font-semibold text-foreground tracking-wide text-lg">住宿說明</h3>
               <div className="flex flex-wrap gap-2">
                 <a 
-                  href="/images/illustrate-01.webp" 
+                  href="/images/illustrate-01.jpg" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 text-xs rounded-lg bg-secondary/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200 border border-border/40"
@@ -127,7 +127,7 @@ export default function Footer() {
                   訂房說明
                 </a>
                 <a 
-                  href="/images/illustrate-02.webp" 
+                  href="/images/illustrate-02.jpg" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 text-xs rounded-lg bg-secondary/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200 border border-border/40"
@@ -144,7 +144,7 @@ export default function Footer() {
                 </button>
 
                 <a 
-                  href="/images/illustrate-05.webp" 
+                  href="/images/illustrate-05.jpg" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 text-xs rounded-lg bg-secondary/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200 border border-border/40"
