@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 合法民宿 No.698 / 好客民宿 No.805<br />
-                一本有陽光與風的旅行繪本。<br />
+                一本有陽光與風的旅行繪本，<br />
                 在宜蘭，等你翻開下一頁。
               </p>
             </div>
@@ -116,8 +116,16 @@ export default function Footer() {
 
             {/* 📋 住宿說明獨立功能區塊 */}
             <div className="pt-6 border-t border-border/40 space-y-4">
-              <h3 className="font-semibold text-foreground tracking-wide text-lg">住宿說明</h3>
+              <h3 className="font-semibold text-foreground tracking-wide text-lg">訂房&住宿說明</h3>
               <div className="flex flex-wrap gap-2">
+              <a 
+                  href="/images/illustrate-00.webp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 text-xs rounded-lg bg-secondary/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200 border border-border/40"
+                >
+                  房價表
+                </a>
                 <a 
                   href="/images/illustrate-01.jpg" 
                   target="_blank" 

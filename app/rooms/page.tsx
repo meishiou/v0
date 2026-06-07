@@ -23,11 +23,17 @@ const rooms = [
     specs: {
       size: "11坪",
       bed: "Queen size雙人床 x1",
-      capacity: "2人",
+      capacity: "2人(不提供加床)",
       bathroom: "獨立乾溼分離衛浴",
     },
     amenities: ["大陽台", "免費 Wi-Fi", "Hitachi冷暖空調", "除濕機", "浴室冷暖風機", "吹風機", "CD音響", "沐浴洗髮二合一洗浴乳", "毛巾", "迎賓茶點"],
     color: "bg-pink-50",
+    price: {
+      weekday: "2600",
+      holiday: "3200",
+      peak: "3500",
+      lunar: "4200",
+    },
   },
   {
     id: "The Green Room",
@@ -45,11 +51,17 @@ const rooms = [
     specs: {
       size: "12坪",
       bed: "Double Size雙人床 x2",
-      capacity: "4人",
+      capacity: "4人(不提供加床)",
       bathroom: "獨立乾溼分離衛浴",
     },
     amenities: ["大陽台", "免費 Wi-Fi", "Hitachi冷暖空調", "除濕機", "浴室冷暖風機", "吹風機", "CD音響", "沐浴洗髮二合一洗浴乳", "毛巾", "迎賓茶點"],
     color: "bg-teal-50",
+    price: {
+      weekday: "3600",
+      holiday: "4200",
+      peak: "4800",
+      lunar: "5800",
+    },
   },
   {
     id: "The Blue Room",
@@ -67,11 +79,17 @@ const rooms = [
     specs: {
       size: "11坪",
       bed: "Queen size雙人床 x1",
-      capacity: "2-4人",
+      capacity: "2人(加床1~2人 ; $800/人)",
       bathroom: "獨立衛浴（浴缸)",
     },
     amenities: ["大陽台", "泡澡浴缸", "免費 Wi-Fi", "Hitachi冷暖空調", "除濕機", "浴室冷暖風機", "吹風機", "CD音響", "沐浴洗髮二合一洗浴乳", "毛巾", "迎賓茶點"],
     color: "bg-orange-50",
+    price: {
+      weekday: "2800",
+      holiday: "3400",
+      peak: "3800",
+      lunar: "4600",
+    },
   },
   {
     id: "The Mix Room",
@@ -89,11 +107,17 @@ const rooms = [
     specs: {
       size: "11.6坪",
       bed: "Queen Size雙人床 x1 + 單人床墊 x2",
-      capacity: "2-4人",
+      capacity: "4人(不提供加床)",
       bathroom: "獨立乾溼分離衛浴",
     },
     amenities: ["手作溜滑梯", "手作遊戲角落", "免費 Wi-Fi", "Hitachi冷暖空調", "除濕機", "浴室冷暖風機", "吹風機", "沐浴洗髮二合一洗浴乳", "毛巾", "迎賓茶點"],
     color: "bg-slate-50",
+    price: {
+      weekday: "4000",
+      holiday: "5000",
+      peak: "5600",
+      lunar: "6800",
+    },
   },
 ]
 
@@ -236,6 +260,62 @@ export default function RoomsPage() {
                           {amenity}
                         </span>
                       ))}
+                    </div>
+                  </div>
+
+                  {/* Price Info */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <h4 className="text-sm font-semibold text-foreground">
+                        房價資訊
+                      </h4>
+                      <span className="text-xs text-muted-foreground">
+                        ※價格已含早餐
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="border border-primary/20 rounded-xl p-3 text-center bg-white/70">
+                        <p className="text-sm font-medium text-primary mb-1">平日</p>
+                        <p className="text-base font-light text-foreground">
+                          NT$ {room.price.weekday}
+                        </p>
+                      </div>
+
+                      <div className="border border-primary/20 rounded-xl p-3 text-center bg-white/70">
+                        <p className="text-sm font-medium text-primary mb-1">假日</p>
+                        <p className="text-base font-light text-foreground">
+                          NT$ {room.price.holiday}
+                        </p>
+                      </div>
+
+                      <div className="border border-primary/20 rounded-xl p-3 text-center bg-white/70">
+                        <p className="text-sm font-medium text-primary mb-1">旺日</p>
+                        <p className="text-base font-light text-foreground">
+                          NT$ {room.price.peak}
+                        </p>
+                      </div>
+
+                      <div className="border border-primary/20 rounded-xl p-3 text-center bg-white/70">
+                        <p className="text-sm font-medium text-primary mb-1">春節</p>
+                        <p className="text-base font-light text-foreground">
+                          NT$ {room.price.lunar}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mt-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                      <div className="text-xs text-muted-foreground leading-relaxed">
+                        <p>※ 旺日定義：暑期週五六、連假、跨年夜</p>
+                        <p>※ 續住另有優惠，詳細請參閱訂房說明</p>
+                      </div>
+
+                      <a
+                        href="/booking"
+                        className="inline-flex items-center justify-center px-5 py-2 border border-primary text-primary rounded-xl hover:bg-primary hover:text-primary-foreground transition-colors"
+                      >
+                        查看訂房&住宿說明
+                      </a>
                     </div>
                   </div>
 
