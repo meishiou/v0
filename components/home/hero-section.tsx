@@ -59,7 +59,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p className="text-primary font-medium mb-4 tracking-widest text-sm">
+        <p className="text-primary font-medium mb-4 tracking-widest text-xl">
           宜蘭安農溪畔
         </p>
         <h1 className="text-5xl md:text-7xl font-light text-white mb-4 tracking-wide">
@@ -69,10 +69,13 @@ export function HeroSection() {
           住進宜蘭的光與呼吸裡
         </p>
         <p className="text-white/70 text-base md:text-lg mb-2">
-          3+1 個房間的小民宿，為您親手打造的家
+          3+1 個房間的小民宿 為您親手打造的家
         </p>
         <p className="text-white/60 text-sm">
           宜蘭合法民宿 No.698 / 好客民宿 No.805
+        </p>
+        <p className="text-white/60 text-sm">
+          國民旅遊卡特約商店
         </p>
 
         {/* Scroll indicator */}

@@ -66,9 +66,12 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                合法民宿 No.698 / 好客民宿 No.805<br />
-                一本有陽光與風的旅行繪本，<br />
-                在宜蘭，等你翻開下一頁。
+              一本有陽光與風的旅行繪本，<br />
+              在宜蘭，等你翻開下一頁。
+              </p>
+              <p className="text-[11px] text-muted-foreground leading-relaxed">
+              合法民宿 No.698 / 好客民宿 No.805<br />
+              國民旅遊卡特約商店                
               </p>
             </div>
 
