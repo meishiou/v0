@@ -1,7 +1,7 @@
 "use client"
 
 import { Navigation } from "@/components/navigation"
-import  Footer  from "@/components/footer"
+import Footer from "@/components/footer"
 import { FloatingBookingButton } from "@/components/floating-booking-button"
 import { useState } from "react"
 import { Maximize2, Users, Ruler, Bath, Wifi, Wind, Coffee, Tv } from "lucide-react"
@@ -125,7 +125,7 @@ const amenityIcons: Record<string, typeof Wifi> = {
   "免費 Wi-Fi": Wifi,
   "冷暖空調": Wind,
   "迎賓茶點": Coffee,
-  "有線電視":Tv,
+  "有線電視": Tv,
 }
 
 export default function RoomsPage() {
@@ -304,29 +304,29 @@ export default function RoomsPage() {
                       </div>
                     </div>
 
-                    <div className="mt-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                      <div className="text-xs text-muted-foreground leading-relaxed">
-                        <p>※ 旺日定義：暑期週五六、連假、跨年夜</p>
-                        <p>※ 續住另有優惠，詳細請參閱訂房說明</p>
-                      </div>
-
-                      <a
-                        href="/booking"
-                        className="inline-flex items-center justify-center px-5 py-2 border border-primary text-primary rounded-xl hover:bg-primary hover:text-primary-foreground transition-colors"
-                      >
-                        查看訂房&住宿說明
-                      </a>
+                    <div className="mt-3 text-xs text-muted-foreground leading-relaxed">
+                      <p>※ 旺日定義：暑期週五六、連假、跨年夜</p>
+                      <p>※ 續住另有優惠，詳細請參閱訂房說明</p>
                     </div>
                   </div>
 
-                  <a
-                    href="https://www.booking-owlnest.com/meishioubnb?lang=zh_TW&adult=1&child=0&infant=0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
-                  >
-                    線上查看空房
-                  </a>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="https://www.booking-owlnest.com/meishioubnb?lang=zh_TW&adult=1&child=0&infant=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
+                    >
+                      線上查看空房
+                    </a>
+
+                    <a
+                      href="#booking-info"
+                      className="inline-flex items-center justify-center px-8 py-3 border border-primary text-primary rounded-xl font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      訂房&住宿說明
+                    </a>
+                  </div>
                 </div>
               </div>
 

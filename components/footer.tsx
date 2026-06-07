@@ -75,19 +75,23 @@ export default function Footer() {
             {/* 🗺️ 地圖區塊 */}
             <div className="w-full flex flex-col">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.176378415848!2d121.7247348!3d24.686419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e2343ecb3459%3A0xcda770dfca7a8c3!2z57Gz5L_bIELDQUIo56666Jit5rCR5b_vKQ!5e0!3m2!1zhmt-TW!2stw!4v1716712000000!5m2!1zhmt-TW!2stw5"
+                src="https://maps.google.com/maps?q=宜蘭縣冬山鄉光華一路415號&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="180"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-xl border border-border/50 shadow-sm"
-                title="米修 B&B 官方地標定位"
+                title="米修 B&B 地址"
               />
-              <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-1.5 pl-0.5">
-                Google 地標 : 米修B&B
-              </p>
+              <a
+              href="https://maps.google.com/?q=宜蘭縣冬山鄉光華一路415號"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] text-primary hover:underline"
+              >
+              📍 Google導航地標：米修B&B
+              </a>
             </div>
           </div>
 
@@ -115,7 +119,9 @@ export default function Footer() {
             </div>
 
             {/* 📋 住宿說明獨立功能區塊 */}
-            <div className="pt-6 border-t border-border/40 space-y-4">
+            <div 
+            id="booking-info"
+            className="pt-6 border-t border-border/40 space-y-4">
               <h3 className="font-semibold text-foreground tracking-wide text-lg">訂房&住宿說明</h3>
               <div className="flex flex-wrap gap-2">
               <a 
@@ -239,7 +245,7 @@ export default function Footer() {
 
         {/* 版權宣告 */}
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.本公司保留隨時修訂網站內容及服務之權利。</p>
+          <p>© {new Date().getFullYear()} 米修 B&B. All rights reserved.本公司保留隨時修改本政策內容的權利。更新後的條款將公告於本網站，建議您定期查閱。</p>
         </div>
       </div>
 
