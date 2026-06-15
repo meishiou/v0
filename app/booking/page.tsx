@@ -1,3 +1,4 @@
+import Script from "next/script"
 import { Navigation } from "@/components/navigation"
 import  Footer  from "@/components/footer"
 import { FloatingBookingButton } from "@/components/floating-booking-button"
@@ -96,9 +97,66 @@ const cancellationPolicy = [
   { days: "1 日前", refund: "退款20%訂金" },
 ]
 
+const faqItems = [
+  {
+    question: "米修 B&B 的入住與退房時間是幾點？",
+    answer: "入住時間為下午 3:00 後，退房時間為上午 11:00 前。如需提早放行李，請事先告知。",
+  },
+  {
+    question: "米修 B&B 包棟最多可以住幾人？",
+    answer: "大包棟為 3+1 間房，最多可入住 12 人，並可加床 2 人。",
+  },
+  {
+    question: "米修 B&B 有提供早餐嗎？",
+    answer: "住宿附手作早餐，但續住 9 折優惠方案不提供早餐。",
+  },
+  {
+    question: "米修 B&B 可以烤肉嗎？",
+    answer: "可以，烤肉為加價服務，建議訂房前先與民宿確認需求。",
+  },
+  {
+    question: "米修 B&B 有停車位嗎？",
+    answer: "有提供免費停車位，大包棟與小包棟約可停 2+2 個車位，單間慢活提供 1 個停車位。",
+  },
+  {
+    question: "米修 B&B 可以攜帶寵物嗎？",
+    answer: "包棟可接待小型寵物，請於訂房前先提出並與民宿商議。",
+  },
+  {
+    question: "米修 B&B 有提供自行車嗎？",
+    answer: "有，住宿期間可免費借用自行車。",
+  },
+  {
+    question: "米修 B&B 附近可以安排在地遊程嗎？",
+    answer: "可以協助代訂龜山島賞鯨、泛舟、SUP、沙灘車等宜蘭在地遊程。",
+  },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+}
+
 export default function BookingPage() {
   return (
     <main className="min-h-screen">
+      <Script
+        id="booking-faq-schema"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
       <Navigation />
       
       {/* Hero */}
