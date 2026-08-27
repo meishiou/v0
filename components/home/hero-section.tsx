@@ -59,24 +59,36 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p className="text-primary font-medium mb-4 tracking-widest text-xl">
-          宜蘭安農溪畔
-        </p>
-        <h1 className="text-5xl md:text-7xl font-light text-white mb-4 tracking-wide">
-          米修 B&B
-        </h1>
-        <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed max-w-2xl mx-auto mb-2">
-          住進宜蘭的光與呼吸裡
-        </p>
-        <p className="text-white/70 text-base md:text-lg mb-2">
-          3+1 個房間的小民宿 為您親手打造的家
-        </p>
-        <p className="text-white/60 text-sm">
-          宜蘭合法民宿 No.698 / 好客民宿 No.805
-        </p>
-        <p className="text-white/60 text-sm">
-          國民旅遊卡特約商店
-        </p>
+  {/* 2026 國旅補助標籤 */}
+  <div className="mb-4 flex justify-center">
+    <span className="inline-block rounded-full bg-[#DFA06E] px-4 py-1.5 text-sm md:text-base font-medium tracking-wider text-white shadow-sm">
+      2026年國旅補助參與業者
+    </span>
+  </div>
+
+  <p className="text-primary font-medium mb-4 tracking-widest text-xl">
+    宜蘭安農溪畔
+  </p>
+
+  <h1 className="text-5xl md:text-7xl font-light text-white mb-4 tracking-wide">
+    米修 B&B
+  </h1>
+
+  <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed max-w-2xl mx-auto mb-2">
+    住進宜蘭的光與呼吸裡
+  </p>
+
+  <p className="text-white/70 text-base md:text-lg mb-2">
+    3+1 個房間的小民宿 為您親手打造的家
+  </p>
+
+  <p className="text-white/60 text-sm">
+    宜蘭合法民宿 No.698 / 好客民宿 No.805
+  </p>
+
+  <p className="text-white/60 text-sm">
+    國民旅遊卡特約商店
+  </p>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
