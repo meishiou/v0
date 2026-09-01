@@ -36,6 +36,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: '/',
+    languages: {
+      'zh-TW': '/',
+      en: '/en',
+      ja: '/ja',
+      ko: '/ko',
+      'x-default': '/',
+    },
   },
   openGraph: {
     title: '米修 B&B | 宜蘭民宿',

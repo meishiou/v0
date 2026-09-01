@@ -1,4 +1,4 @@
-import Script from "next/script"
+
 import { Navigation } from "@/components/navigation"
 import  Footer  from "@/components/footer"
 import { FloatingBookingButton } from "@/components/floating-booking-button"
@@ -148,14 +148,13 @@ const faqSchema = {
 export default function BookingPage() {
   return (
     <main className="min-h-screen">
-      <Script
-        id="booking-faq-schema"
-        type="application/ld+json"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-      />
+<script
+  id="booking-faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqSchema),
+  }}
+/>
 
       <Navigation />
       

@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Calendar } from "lucide-react"
+import { Menu, X, Calendar, Globe2, ChevronDown } from "lucide-react"
 
 // 1. 資料結構：清晰拆分中英文，方便不同區塊進行精細的字體特效設定
 const navItems = [
@@ -17,6 +17,8 @@ const navItems = [
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [languageOpen, setLanguageOpen] = useState(false)
+  const languageRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,17 @@ export function Navigation() {
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
+        setLanguageOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleOutsideClick)
+    return () => document.removeEventListener("mousedown", handleOutsideClick)
   }, [])
 
   return (
@@ -36,21 +49,83 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           
           {/* Logo 區塊：完美置入精緻尺寸的官方 LOGO */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-9 h-9 shrink-0 mix-blend-multiply">
-              <Image
-                src="/images/LOGO.jpg"
-                alt="米修 B&B LOGO"
-                fill
-                className="object-contain"
-                priority
-              />
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-9 h-9 shrink-0 mix-blend-multiply">
+                <Image
+                  src="/images/LOGO.jpg"
+                  alt="米修 B&B LOGO"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="text-base font-semibold tracking-wide text-primary transition-colors">米修</span>
+                <span className="text-xs text-muted-foreground pt-0.5">B&B</span>
+              </div>
+            </Link>
+
+            {/* 中文主站外語入口：低調放在 Logo 旁，桌機與手機皆可快速切換 */}
+            <div ref={languageRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setLanguageOpen((value) => !value)}
+                aria-expanded={languageOpen}
+                aria-haspopup="menu"
+                aria-label="切換語言 Language"
+                title="Language"
+                className="flex items-center gap-1 rounded-full border border-border/70 bg-background/70 px-2.5 py-1.5 text-xs text-muted-foreground shadow-sm backdrop-blur-sm transition hover:border-primary/40 hover:text-primary"
+              >
+                <Globe2 size={15} aria-hidden="true" />
+                <span className="hidden sm:inline">Language</span>
+                <ChevronDown
+                  size={13}
+                  aria-hidden="true"
+                  className={`transition-transform ${languageOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              {languageOpen && (
+                <div
+                  role="menu"
+                  className="absolute left-0 top-full z-[70] mt-2 min-w-40 overflow-hidden rounded-2xl border border-border bg-background/98 p-1.5 text-foreground shadow-xl backdrop-blur-md"
+                >
+                  <span
+                    role="menuitem"
+                    aria-current="page"
+                    className="block rounded-xl px-3 py-2 text-sm font-semibold text-primary"
+                  >
+                    繁體中文
+                  </span>
+                  <Link
+                    href="/en"
+                    role="menuitem"
+                    onClick={() => setLanguageOpen(false)}
+                    className="block rounded-xl px-3 py-2 text-sm transition hover:bg-muted"
+                  >
+                    English
+                  </Link>
+                  <Link
+                    href="/ja"
+                    role="menuitem"
+                    onClick={() => setLanguageOpen(false)}
+                    className="block rounded-xl px-3 py-2 text-sm transition hover:bg-muted"
+                  >
+                    日本語
+                  </Link>
+                  <Link
+                    href="/ko"
+                    role="menuitem"
+                    onClick={() => setLanguageOpen(false)}
+                    className="block rounded-xl px-3 py-2 text-sm transition hover:bg-muted"
+                  >
+                    한국어
+                  </Link>
+                </div>
+              )}
             </div>
-            <div className="flex items-center gap-1">
-              <span className="text-base font-semibold tracking-wide text-primary transition-colors">米修</span>
-              <span className="text-xs text-muted-foreground pt-0.5">B&B</span>
-            </div>
-          </Link>
+          </div>
 
           {/* 電腦版導航列：中英文雙列置中重疊 (上下排列) */}
           <div className="hidden md:flex items-center gap-6">
