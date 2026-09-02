@@ -22,9 +22,9 @@ const copy = {
   },
   ko: {
     eyebrow: "MEET MEISHIOU",
-    title: "이란의 일상 가까이에 머무는 작은 숙소.",
-    body: "Meishiou B&B는 안농시와 뤄둥 가까이에 자리한 작은 시골 숙소입니다. 3+1개의 객실을 거점으로 들판과 물가, 이란의 일상적인 리듬을 천천히 느껴보세요.",
-    facts: ["대만 · 이란", "3+1 Rooms", "Countryside Stay"],
+    title: "이란(宜蘭)의 일상 가까이에 머무는 작은 숙소.",
+    body: "Meishiou B&B는 안농강(安農溪)과 뤄둥 가까이에 자리한 작은 시골 숙소입니다. 3+1개의 객실이 있는 이곳에서 들판과 물가, 이란(宜蘭)의 일상적인 리듬을 천천히 느껴보세요.",
+    facts: ["대만(台灣) · 이란(宜蘭)", "3+1 Rooms", "Countryside Stay"],
     entranceAlt: "이란 Meishiou B&B의 정원과 나무 데크 입구.",
     livingAlt: "손수 만든 목재 가구와 큰 창이 있는 Meishiou B&B 거실.",
     bikeAlt: "Meishiou B&B 근처의 물길과 푸른 들판을 따라 자전거를 타는 풍경.",

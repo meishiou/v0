@@ -5,6 +5,9 @@ export const internationalLocales: InternationalLocale[] = ["en", "ja", "ko"]
 export const bookingUrl =
   "https://www.booking-owlnest.com/meishioubnb?lang=zh_TW&adult=1&child=0&infant=0"
 
+export const bookingUrlEnglish =
+  "https://www.booking-owlnest.com/meishioubnb?lang=en&adult=1&child=0&infant=0"
+
 export const languageLinks = [
   { href: "/", label: "繁體中文", shortLabel: "繁中" },
   { href: "/en", label: "English", shortLabel: "EN", locale: "en" as const },
@@ -60,7 +63,7 @@ export const internationalCopy = {
     footerNote: "このページは、これから少しずつ内容を整えていきます。",
   },
   ko: {
-    location: "대만 · 이란",
+    location: "대만(台灣) · 이란(宜蘭)",
     title: "Meishiou B&B",
     tagline: "빛과 물, 일상의 온기가 머무는 작은 시골 숙소.",
     book: "예약하기",

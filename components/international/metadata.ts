@@ -13,8 +13,8 @@ const metadataByLocale = {
     ogLocale: "ja_JP",
   },
   ko: {
-    title: "Meishiou B&B | 대만 이란 숙소",
-    description: "대만 이란의 안농시와 뤄둥 인근에 자리한 작은 시골 B&B입니다.",
+    title: "Meishiou B&B | 대만(台灣) 이란(宜蘭) 숙소",
+    description: "대만(台灣) 이란(宜蘭)의 안농강(安農溪)과 뤄둥 인근에 자리한 작은 시골 B&B입니다.",
     ogLocale: "ko_KR",
   },
 } satisfies Record<InternationalLocale, {

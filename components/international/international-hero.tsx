@@ -6,6 +6,7 @@ import Link from "next/link"
 import { ArrowDown, CalendarDays } from "lucide-react"
 import {
   bookingUrl,
+  bookingUrlEnglish,
   heroImages,
   internationalCopy,
   type InternationalLocale,
@@ -78,7 +79,7 @@ export function InternationalHero({ locale }: { locale: InternationalLocale }) {
           </p>
 
           <a
-            href={bookingUrl}
+            href={locale === "ko" ? bookingUrlEnglish : bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-foreground"
@@ -86,6 +87,12 @@ export function InternationalHero({ locale }: { locale: InternationalLocale }) {
             <CalendarDays size={17} aria-hidden="true" />
             {copy.book}
           </a>
+
+          {locale === "ko" && (
+            <p className="mt-3 text-[11px] font-light tracking-wide text-white/75 md:text-xs">
+              ※ 예약 페이지: 영어 · 중국어 · 일본어 지원
+            </p>
+          )}
         </div>
       </div>
 
