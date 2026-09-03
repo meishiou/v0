@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { CalendarDays } from "lucide-react"
-import { bookingUrl, bookingUrlEnglish, internationalCopy, type InternationalLocale } from "./config"
+import { bookingUrls, internationalCopy, type InternationalLocale } from "./config"
 
 export function InternationalFloatingBookingButton({
   locale,
@@ -21,7 +21,7 @@ export function InternationalFloatingBookingButton({
 
   return (
     <a
-      href={locale === "ko" ? bookingUrlEnglish : bookingUrl}
+      href={bookingUrls[locale]}
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl md:bottom-6 md:right-6 md:px-5 ${

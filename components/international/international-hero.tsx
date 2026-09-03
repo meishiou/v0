@@ -5,8 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowDown, CalendarDays } from "lucide-react"
 import {
-  bookingUrl,
-  bookingUrlEnglish,
+  bookingUrls,
   heroImages,
   internationalCopy,
   type InternationalLocale,
@@ -79,7 +78,7 @@ export function InternationalHero({ locale }: { locale: InternationalLocale }) {
           </p>
 
           <a
-            href={locale === "ko" ? bookingUrlEnglish : bookingUrl}
+            href={bookingUrls[locale]}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-foreground"

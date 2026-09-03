@@ -2,11 +2,11 @@ export type InternationalLocale = "en" | "ja" | "ko"
 
 export const internationalLocales: InternationalLocale[] = ["en", "ja", "ko"]
 
-export const bookingUrl =
-  "https://www.booking-owlnest.com/meishioubnb?lang=zh_TW&adult=1&child=0&infant=0"
-
-export const bookingUrlEnglish =
-  "https://www.booking-owlnest.com/meishioubnb?lang=en&adult=1&child=0&infant=0"
+export const bookingUrls: Record<InternationalLocale, string> = {
+  en: "https://www.booking-owlnest.com/meishioubnb?lang=en&adult=1&child=0&infant=0",
+  ja: "https://www.booking-owlnest.com/meishioubnb?lang=ja&adult=1&child=0&infant=0",
+  ko: "https://www.booking-owlnest.com/meishioubnb?lang=en&adult=1&child=0&infant=0",
+}
 
 export const languageLinks = [
   { href: "/", label: "繁體中文", shortLabel: "繁中" },

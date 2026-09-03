@@ -37,7 +37,7 @@ const copy = {
     other: "Other questions or requests",
     otherPlaceholder: "Arrival time, children, transport, EV charging, or anything else you would like us to know.",
     flexibleNote:
-      "If you choose “Yes,” only the rooms you need will be prepared for your stay, while the remaining guest rooms will be kept unavailable to other guests. An additional privacy fee of NT$1,500 per unused room on weekdays or NT$2,000 per unused room on weekends and holidays applies.",
+      "If you choose “Yes,” only the rooms you need will be prepared for your stay, while the remaining guest rooms will be kept unavailable to other guests. An additional exclusive-use fee of NT$1,500 per unused room on weekdays or NT$2,000 per unused room on weekends and holidays applies.",
     previewTitle: "Your inquiry text",
     previewIntro: "This text updates as you fill in the form. You can also copy the blank template before entering anything.",
     copyText: "Copy Inquiry Text",

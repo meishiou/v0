@@ -5,8 +5,8 @@ const copy = {
   en: {
     eyebrow: "MEET MEISHIOU",
     title: "A small stay, close to Yilan life.",
-    body: "Meishiou B&B is a small countryside stay near the Annong River and Luodong. With just 3+1 rooms, it is a quiet base for slowing down and experiencing the fields, water and everyday rhythms of Yilan.",
-    facts: ["Yilan, Taiwan", "3+1 Rooms", "Countryside Stay"],
+    body: "Meishiou B&B is a small countryside stay near the Annong River and Luodong. With just 4 rooms, it is a quiet base for slowing down and experiencing the fields, water and everyday rhythms of Yilan.",
+    facts: ["Yilan, Taiwan", "4 Rooms", "Countryside Stay"],
     entranceAlt: "The garden entrance and wooden deck at Meishiou B&B in Yilan.",
     livingAlt: "The living room at Meishiou B&B, with handmade wooden furniture and a large window looking outside.",
     bikeAlt: "Cycling beside the water and green fields near Meishiou B&B in Yilan.",
@@ -14,8 +14,8 @@ const copy = {
   ja: {
     eyebrow: "MEET MEISHIOU",
     title: "宜蘭の日常に近い、小さな宿。",
-    body: "米修 B&B は、安農渓と羅東の近くにある小さな田園の宿です。3+1室だけの空間を拠点に、田畑や水辺、宜蘭の日々のリズムを感じながら、ゆっくりと過ごしていただけます。",
-    facts: ["台湾・宜蘭", "3+1 Rooms", "Countryside Stay"],
+    body: "米修 B&B は、安農渓と羅東の近くにある小さな田園の宿です。4室だけの小さな宿を拠点に、田畑や水辺、宜蘭の日々のリズムを感じながら、ゆっくりと過ごしていただけます。",
+    facts: ["台湾・宜蘭", "4 Rooms", "Countryside Stay"],
     entranceAlt: "宜蘭にある米修B&Bの庭とウッドデッキの入口。",
     livingAlt: "手作りの木製家具と大きな窓がある米修B&Bのリビング。",
     bikeAlt: "米修B&B周辺の水辺と緑の中を自転車で走る風景。",
@@ -23,8 +23,8 @@ const copy = {
   ko: {
     eyebrow: "MEET MEISHIOU",
     title: "이란(宜蘭)의 일상 가까이에 머무는 작은 숙소.",
-    body: "Meishiou B&B는 안농강(安農溪)과 뤄둥 가까이에 자리한 작은 시골 숙소입니다. 3+1개의 객실이 있는 이곳에서 들판과 물가, 이란(宜蘭)의 일상적인 리듬을 천천히 느껴보세요.",
-    facts: ["대만(台灣) · 이란(宜蘭)", "3+1 Rooms", "Countryside Stay"],
+    body: "Meishiou B&B는 안농강(安農溪)과 뤄둥 가까이에 자리한 작은 시골 숙소입니다. 4개의 객실이 있는 이곳에서 들판과 물가, 이란(宜蘭)의 일상적인 리듬을 천천히 느껴보세요.",
+    facts: ["대만(台灣) · 이란(宜蘭)", "4 Rooms", "Countryside Stay"],
     entranceAlt: "이란 Meishiou B&B의 정원과 나무 데크 입구.",
     livingAlt: "손수 만든 목재 가구와 큰 창이 있는 Meishiou B&B 거실.",
     bikeAlt: "Meishiou B&B 근처의 물길과 푸른 들판을 따라 자전거를 타는 풍경.",

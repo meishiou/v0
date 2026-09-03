@@ -36,7 +36,7 @@ const copy = {
     facebook: "Facebook",
     instagram: "Instagram",
     email: "メール",
-    registration: "合法民宿 No. 698 · Taiwan Host No. 805",
+    registration: "宜蘭県登録民宿 No. 698 · Taiwan Host No. 805",
   },
   ko: {
     place: "대만 · 이란",

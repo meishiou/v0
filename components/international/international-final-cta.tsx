@@ -1,5 +1,5 @@
 import { CalendarDays, Mail } from "lucide-react"
-import { bookingUrl, bookingUrlEnglish, type InternationalLocale } from "./config"
+import { bookingUrls, type InternationalLocale } from "./config"
 
 const copy = {
   en: {
@@ -49,7 +49,7 @@ export function InternationalFinalCta({ locale }: { locale: InternationalLocale 
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
-            href={locale === "ko" ? bookingUrlEnglish : bookingUrl}
+            href={bookingUrls[locale]}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-w-[210px] items-center justify-center gap-2.5 rounded-full bg-[#78b9b4] px-6 py-3.5 text-sm font-medium text-white shadow-[0_10px_28px_rgba(79,135,130,0.18)] transition hover:-translate-y-0.5 hover:bg-[#6baaa5] hover:shadow-[0_14px_32px_rgba(79,135,130,0.22)]"
