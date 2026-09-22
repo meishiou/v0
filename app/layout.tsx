@@ -20,7 +20,7 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://meishiou.com.tw'),
+  metadataBase: new URL('https://www.meishiou.com.tw'),
   title: '米修 B&B | 宜蘭民宿 - 一本有陽光與風的旅行繪本',
   description:
     '米修 B&B 位於宜蘭冬山鄉，鄰近安農溪與羅東，提供全棟包棟、微型包棟與單間慢活三種入住方式。在這裡，每一個角落都是一段故事，每一扇窗都有風景。',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '米修 B&B | 宜蘭民宿',
     description: '一本有陽光與風的旅行繪本',
-    url: 'https://meishiou.com.tw',
+    url: 'https://www.meishiou.com.tw',
     siteName: '米修 B&B',
     type: 'website',
     locale: 'zh_TW',
@@ -71,12 +71,12 @@ export const viewport: Viewport = {
 const lodgingBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LodgingBusiness',
-  '@id': 'https://meishiou.com.tw/#lodgingbusiness',
+  '@id': 'https://www.meishiou.com.tw/#lodgingbusiness',
   name: '米修 B&B',
   alternateName: 'Meishiou B&B',
-  url: 'https://meishiou.com.tw',
-  image: 'https://meishiou.com.tw/images/hero-1.webp',
-  logo: 'https://meishiou.com.tw/images/LOGO.jpg',
+  url: 'https://www.meishiou.com.tw',
+  image: 'https://www.meishiou.com.tw/images/hero-1.webp',
+  logo: 'https://www.meishiou.com.tw/images/LOGO.jpg',
   description:
     '米修 B&B 位於宜蘭冬山鄉，鄰近安農溪與羅東，提供全棟包棟、微型包棟與單間慢活住宿，是一間帶有手作木作、生活感與自然光氛圍的宜蘭民宿。',
   telephone: '+886-939-741-583',

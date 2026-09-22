@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://meishiou.com.tw/sitemap.xml",
+    sitemap: "https://www.meishiou.com.tw/sitemap.xml",
   }
 }

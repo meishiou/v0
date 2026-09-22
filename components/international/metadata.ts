@@ -43,7 +43,7 @@ export function getInternationalMetadata(locale: InternationalLocale): Metadata 
     openGraph: {
       title: data.title,
       description: data.description,
-      url: `https://meishiou.com.tw${path}`,
+      url: `https://www.meishiou.com.tw${path}`,
       siteName: "Meishiou B&B",
       type: "website",
       locale: data.ogLocale,

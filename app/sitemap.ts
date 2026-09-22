@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://meishiou.com.tw"
+  const baseUrl = "https://www.meishiou.com.tw"
   const languageAlternates = {
     "zh-TW": `${baseUrl}/`,
     en: `${baseUrl}/en`,
